@@ -5,42 +5,89 @@
   <title>За нас | Нова Сила</title>
   <style>
     body {
-      font-family: sans-serif;
-      background-color: #f0f9ff;
+      font-family: 'Segoe UI', sans-serif;
       margin: 0;
-      padding: 20px;
+      background-color: #eaf8fb;
       color: #0b1c3d;
     }
 
+    header {
+      background-color: #0b1c3d;
+      color: white;
+      padding: 20px 40px;
+      text-align: center;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 40px 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+
+    .container img {
+      max-width: 100%;
+      border-radius: 12px;
+      margin: 30px 0;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+
     h1 {
-      color: #0b1c3d;
+      font-size: 32px;
+      margin-bottom: 20px;
     }
 
     p {
       font-size: 18px;
-      line-height: 1.6;
+      line-height: 1.7;
       max-width: 700px;
     }
 
-    a {
-      color: #1ccfc9;
+    a.back-link {
+      display: inline-block;
+      margin-top: 30px;
       text-decoration: none;
+      color: #1ccfc9;
+      font-weight: bold;
     }
 
-    a:hover {
+    a.back-link:hover {
       text-decoration: underline;
+    }
+
+    footer {
+      background-color: #0b1c3d;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 60px;
     }
   </style>
 </head>
 <body>
 
-  <h1>За нас</h1>
-  <p>
-    Център „Нова Сила“ е специализиран в предоставянето на рехабилитационни и кинезитерапевтични услуги.
-    Нашият екип от професионалисти работи с грижа и внимание, за да възстановим подвижността и здравето на нашите пациенти.
-  </p>
+  <header>
+    <h2>Център „Нова Сила“</h2>
+  </header>
 
-  <p><a href="index.html">⬅ Назад към началната страница</a></p>
+  <div class="container">
+    <h1>За нас</h1>
+    <p>
+      Център „Нова Сила“ е специализиран в предоставянето на рехабилитационни и кинезитерапевтични услуги.
+      Нашият екип от професионалисти работи с грижа и внимание, за да възстановим подвижността и здравето на нашите пациенти.
+    </p>
+
+    <img src="https://github.com/niya230325/rehab-page/raw/main/IMG_2718.jpeg" alt="Терапия в центъра" />
+
+    <a href="index.html" class="back-link">⬅ Назад към началната страница</a>
+  </div>
+
+  <footer>
+    © 2025 Нова Сила - Всички права запазени.
+  </footer>
 
 </body>
 </html>
