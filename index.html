@@ -11,196 +11,178 @@
       padding: 0;
     }
 
-    html, body {
-      height: 100%;
-      margin: 0;
-      padding: 0;
-    }
-
     body {
       font-family: 'Segoe UI', sans-serif;
-      background-color: #f5faff;
+      background-color: #f9f9f9;
       overflow-x: hidden;
-    }
-
-    body.menu-open {
-      overflow: hidden;
+      line-height: 1.6;
     }
 
     header {
-      background-color: #0b1c3d;
-      color: white;
+      background-color: #fff;
+      color: #6b46c1;
       display: flex;
       align-items: center;
       justify-content: space-between;
       padding: 20px;
-      position: relative;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     }
 
     .logo {
       font-size: 24px;
       font-weight: bold;
-      text-align: center;
-      flex-grow: 1;
-    }
-
-    .menu-toggle {
-      display: none;
-      flex-direction: column;
-      cursor: pointer;
-      position: absolute;
-      left: 20px;
-      top: 25px;
-      z-index: 1100;
-    }
-
-    .menu-toggle span {
-      height: 3px;
-      background: white;
-      margin: 4px 0;
-      width: 25px;
-      border-radius: 2px;
-    }
-
-    nav {
-      position: fixed;
-      top: 0;
-      left: -100vw;
-      width: 100vw;
-      height: 100vh;
-      background-color: white;
-      color: #0b1c3d;
-      padding: 40px 20px;
-      display: flex;
-      flex-direction: column;
-      justify-content: flex-start;
-      transition: left 0.3s ease;
-      z-index: 2000;
-    }
-
-    nav.show {
-      left: 0;
-    }
-
-    nav .close-btn {
-      font-size: 32px;
-      font-weight: normal;
-      color: #0b1c3d;
-      background: none;
-      border: none;
-      text-align: left;
-      margin-bottom: 30px;
-      cursor: pointer;
     }
 
     nav ul {
       list-style: none;
+      display: flex;
+      align-items: center;
     }
 
     nav ul li {
-      margin-bottom: 20px;
+      margin-left: 20px;
     }
 
     nav ul li a {
       text-decoration: none;
-      color: #0b1c3d;
-      font-size: 18px;
+      color: #6b46c1;
       font-weight: 500;
     }
 
-    nav ul li a.btn {
-      background-color: #24cdd5;
-      color: #0b1c3d;
-      padding: 10px 15px;
-      border-radius: 5px;
+    .booking-form {
+      position: fixed;
+      left: 20px;
+      top: 100px;
+      width: 300px;
+      background-color: #9f7aea;
+      color: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .booking-form h3 {
+      margin-bottom: 15px;
+      font-size: 18px;
+    }
+
+    .booking-form select, .booking-form input {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+      border: none;
+      border-radius: 4px;
+    }
+
+    .booking-form button {
+      width: 100%;
+      padding: 10px;
+      background-color: white;
+      border: none;
+      border-radius: 4px;
       font-weight: bold;
-      display: inline-block;
+      cursor: pointer;
     }
 
     .hero {
       background-image: url('https://github.com/niya230325/rehab-page/raw/main/IMG_2735.jpeg');
       background-size: cover;
       background-position: center;
-      color: white;
+      color: #333;
       padding: 100px 20px;
       text-align: center;
+      background-color: rgba(255, 255, 255, 0.8);
+      background-blend-mode: overlay;
     }
 
     .hero h1 {
-      font-size: 42px;
-      margin-bottom: 10px;
-      text-shadow: 1px 1px 3px #000;
+      font-size: 36px;
+      margin-bottom: 20px;
     }
 
     .hero p {
-      font-size: 20px;
-      margin-bottom: 20px;
-      text-shadow: 1px 1px 2px #000;
-    }
-
-    .hero .btn {
-      background-color: #24cdd5;
-      color: #0b1c3d;
-      padding: 12px 25px;
-      border-radius: 5px;
-      text-decoration: none;
-      font-weight: bold;
+      font-size: 18px;
+      margin-bottom: 30px;
     }
 
     .features {
+      padding: 50px 20px;
+      text-align: center;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .features h2 {
+      font-size: 28px;
+      color: #6b46c1;
+      margin-bottom: 20px;
+    }
+
+    .features p {
+      color: #666;
+      margin-bottom: 40px;
+    }
+
+    .feature-grid {
       display: flex;
       justify-content: space-around;
       flex-wrap: wrap;
-      padding: 50px 20px;
-      background-color: #ffffff;
     }
 
-    .feature {
+    .feature-item {
       flex: 1 1 200px;
       margin: 20px;
       text-align: center;
     }
 
-    .feature img {
+    .feature-item img {
       width: 50px;
       height: 50px;
+      filter: invert(1) sepia(1) saturate(5) hue-rotate(200deg);
     }
 
-    .feature h3 {
+    .feature-item h3 {
       margin-top: 10px;
-      color: #0b1c3d;
+      color: #6b46c1;
     }
 
-    .feature p {
-      color: #333;
-    }
-
-    .what-we-do {
-      background-color: #e7f9fd;
-      padding: 60px 20px;
-      text-align: center;
-    }
-
-    .what-we-do h2 {
-      font-size: 28px;
-      color: #0b1c3d;
+    .feature-item p {
+      color: #666;
     }
 
     footer {
-      background-color: #0b1c3d;
+      background-color: #6b46c1;
       color: white;
       text-align: center;
       padding: 20px;
+      position: relative;
+      bottom: 0;
+      width: 100%;
     }
 
-    /* Responsive */
     @media (max-width: 768px) {
-      .menu-toggle {
-        display: flex;
+      .booking-form {
+        position: static;
+        width: 100%;
+        margin: 20px 0;
       }
 
-      nav ul li {
-        margin-bottom: 20px;
+      nav ul {
+        display: none;
+      }
+
+      .menu-toggle {
+        display: flex;
+        flex-direction: column;
+        cursor: pointer;
+      }
+
+      .menu-toggle span {
+        height: 3px;
+        background: #6b46c1;
+        margin: 4px 0;
+        width: 25px;
+        border-radius: 2px;
       }
     }
   </style>
@@ -208,72 +190,68 @@
 <body>
 
   <header>
-    <div class="menu-toggle" onclick="toggleMenu()">
-      <span></span>
-      <span></span>
-      <span></span>
-    </div>
     <div class="logo">VitalisRehabilitation</div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Начало</a></li>
+        <li><a href="about.html">За нас</a></li>
+        <li><a href="approach.html">Нашият подход</a></li>
+        <li><a href="#">Услуги</a></li>
+        <li><a href="#">Контакти</a></li>
+      </ul>
+    </nav>
   </header>
 
-  <nav id="menu">
-    <button class="close-btn" onclick="toggleMenu()">✕</button>
-    <ul>
-      <li><a href="index.html">Начало</a></li>
-      <li><a href="about.html">За нас</a></li>
-      <li><a href="approach.html">Нашият подход</a></li>
-      <li><a href="#">Услуги</a></li>
-      <li><a href="#">Контакти</a></li>
-      <li><a href="#" class="btn">Запази час</a></li>
-    </ul>
-  </nav>
+  <div class="booking-form">
+    <h3>WE ARE HERE FOR YOU</h3>
+    <h3>Book Appointment</h3>
+    <select>
+      <option value="">Select Departments</option>
+    </select>
+    <select>
+      <option value="">Select Doctors</option>
+    </select>
+    <input type="text" placeholder="Your Full Name">
+    <input type="text" placeholder="Phone">
+    <input type="date" placeholder="Date">
+    <button>BOOK APPOINTMENT</button>
+  </div>
 
   <section class="hero">
     <h1>Подкрепа за твоето възстановяване</h1>
     <p>Индивидуални рехабилитационни планове, съобразени с теб</p>
-    <a href="#" class="btn">Запази консултация</a>
   </section>
 
   <section class="features">
-    <div class="feature">
-      <img src="https://img.icons8.com/ios-filled/50/0b1c3d/medical-doctor.png"/>
-      <h3>Персонален подход</h3>
-      <p>Персонализирани планове според твоето състояние</p>
+    <h2>What to Expect From Us</h2>
+    <p>Тemporibus autem quibuиdam et aut officiis debitis aut rerum necessitatibus saepe eveniet</p>
+    <div class="feature-grid">
+      <div class="feature-item">
+        <img src="https://img.icons8.com/ios-filled/50/000000/leg.png" alt="Calf Muscle Injury">
+        <h3>Calf Muscle Injury</h3>
+        <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut</p>
+      </div>
+      <div class="feature-item">
+        <img src="https://img.icons8.com/ios-filled/50/000000/ankle.png" alt="Ankle Sprain">
+        <h3>Ankle Sprain</h3>
+        <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut</p>
+      </div>
+      <div class="feature-item">
+        <img src="https://img.icons8.com/ios-filled/50/000000/dance.png" alt="Dancing Injuries">
+        <h3>Dancing Injuries</h3>
+        <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut</p>
+      </div>
+      <div class="feature-item">
+        <img src="https://img.icons8.com/ios-filled/50/000000/wheelchair.png" alt="Cerebral Palsy">
+        <h3>Cerebral Palsy</h3>
+        <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut</p>
+      </div>
     </div>
-    <div class="feature">
-      <img src="https://img.icons8.com/ios-filled/50/0b1c3d/back-pain.png"/>
-      <h3>Лечение на болка</h3>
-      <p>Специални терапии за опорно-двигателни проблеми</p>
-    </div>
-    <div class="feature">
-      <img src="https://img.icons8.com/ios-filled/50/0b1c3d/physical-therapy.png"/>
-      <h3>Кинезитерапия</h3>
-      <p>Движение за здраве с професионални упражнения</p>
-    </div>
-    <div class="feature">
-      <img src="https://img.icons8.com/ios-filled/50/0b1c3d/collaboration.png"/>
-      <h3>Екип от специалисти</h3>
-      <p>Работим заедно за твоето по-добро бъдеще</p>
-    </div>
-  </section>
-
-  <section class="what-we-do">
-    <h2>Какво правим</h2>
-    <p>Предлагаме професионална помощ за възстановяване и поддържане на здравето. Нашият екип от специалисти създава персонализирани решения за всяка нужда.</p>
   </section>
 
   <footer>
     © 2025 VitalisRehabilitation – Всички права запазени.
   </footer>
-
-  <script>
-    function toggleMenu() {
-      const menu = document.getElementById('menu');
-      const body = document.body;
-      menu.classList.toggle('show');
-      body.classList.toggle('menu-open');
-    }
-  </script>
 
 </body>
 </html>
