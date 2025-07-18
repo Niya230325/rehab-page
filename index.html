@@ -1,90 +1,72 @@
 <!DOCTYPE html>
 <html lang="bg">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Нова Сила - Рехабилитация</title>
+  <meta charset="UTF-8" />
+  <title>Нова Сила</title>
+  
   <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background-color: #f5f9fa;
-      color: #333;
-    }
+ <style>
+/* Основен стил на хедъра */
+header {
+  background-color: #0c1b3c;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+}
 
-    header {
-      background-color: #0e1b3d;
-      padding: 20px;
-      color: white;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
+/* Лого */
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+.logo span {
+  color: #1ccfc9;
+}
 
-    header .logo {
-      font-size: 24px;
-      font-weight: bold;
-    }
+/* Меню */
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+  margin: 0;
+  padding: 0;
+}
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+nav ul li a:hover {
+  color: #1ccfc9;
+}
 
-    nav a {
-      color: white;
-      text-decoration: none;
-      margin: 0 10px;
-      font-size: 16px;
-    }
+/* CTA бутон */
+.cta {
+  background-color: #1ccfc9;
+  color: #0c1b3c;
+  padding: 8px 16px;
+  border-radius: 4px;
+  font-weight: bold;
+}
+.cta:hover {
+  background-color: #17b2af;
+}
 
-    .hero {
-      display: flex;
-      flex-wrap: wrap;
-      align-items: center;
-      justify-content: space-between;
-      padding: 40px;
-      background-color: #e9f4f5;
-    }
-
-    .hero-text {
-      max-width: 500px;
-    }
-
-    .hero-text h1 {
-      font-size: 32px;
-      color: #0e1b3d;
-    }
-
-    .hero-text p {
-      font-size: 16px;
-      margin: 20px 0;
-    }
-
-    .hero-text .btn {
-      background-color: #34c8d9;
-      color: white;
-      border: none;
-      padding: 10px 20px;
-      font-size: 16px;
-      border-radius: 6px;
-      cursor: pointer;
-      text-decoration: none;
-    }
-
-    .hero img {
-      max-width: 100%;
-      width: 400px;
-      border-radius: 10px;
-    }
-
-    footer {
-      background-color: #0e1b3d;
-      color: white;
-      text-align: center;
-      padding: 15px;
-      font-size: 14px;
-    }
+/* Пространство под хедъра */
+body {
+  padding-top: 70px;
+}
+</style>
   </style>
 </head>
-<body>
-
-  <body>
+   <body>
 
   <!-- Header -->
   <header>
