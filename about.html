@@ -8,11 +8,11 @@
     body {
       margin: 0;
       font-family: 'Segoe UI', sans-serif;
-      background-color: #ffffff;
-      padding: 20px;
+      background-color: #f0f5fa;
       display: flex;
       flex-direction: column;
       align-items: center;
+      padding: 20px;
     }
 
     h1 {
@@ -43,11 +43,45 @@
     .content a:hover {
       text-decoration: underline;
     }
+
+    .menu {
+      list-style-type: none;
+      padding: 0;
+      width: 100%;
+      max-width: 300px;
+    }
+
+    .menu li {
+      background-color: #e6f0fa;
+      margin-bottom: 10px;
+      padding: 15px;
+      border-radius: 10px;
+      text-align: left;
+    }
+
+    .menu li a {
+      color: #0b1c3d;
+      text-decoration: none;
+      font-size: 16px;
+    }
+
+    .menu li a:hover {
+      text-decoration: underline;
+    }
   </style>
 </head>
 <body>
   <h1>За нас</h1>
   <div class="content">
     <p>При нас в <strong>VitalisRehabilitation</strong> медицинският център от най-ново поколение, в който предлагаме услуги на световно ниво, сред които възстановяване след операции, интервенции на опорно-двигателен апарат и още.</p>
-    <p>Научете повече за <a href="mission.html">нашата мисия и визия</a>, <a href="team.html">екпя</a>, <a href="approach.html">нашия подход</a>, <a href="clients.html">кои хора ни търсят</a>, <a href="results.html">доверие и резултати</a>, както и за <a href="location.html">локация и оборудване</a>.</p>
+    <ul class="menu">
+      <li><a href="mission.html">Нашата мисия и визия</a></li>
+      <li><a href="team.html">Екип</a></li>
+      <li><a href="approach.html">Нашият подход</a></li>
+      <li><a href="clients.html">Кои хора ни търсят</a></li>
+      <li><a href="results.html">Доверие и резултати</a></li>
+      <li><a href="location.html">Локация и оборудване</a></li>
+    </ul>
   </div>
+</body>
+</html>
