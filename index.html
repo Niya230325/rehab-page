@@ -5,8 +5,13 @@
   <title>VitalisRehabilitation</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
-    body {
+    * {
+      box-sizing: border-box;
       margin: 0;
+      padding: 0;
+    }
+
+    body {
       font-family: 'Segoe UI', sans-serif;
       background-color: #f5faff;
       overflow-x: hidden;
@@ -54,8 +59,8 @@
     nav {
       position: fixed;
       top: 0;
-      left: -100%;
-      width: 100%;
+      left: -100vw;
+      width: 100vw;
       height: 100vh;
       background-color: white;
       color: #0b1c3d;
@@ -84,8 +89,6 @@
 
     nav ul {
       list-style: none;
-      padding: 0;
-      margin: 0;
     }
 
     nav ul li {
