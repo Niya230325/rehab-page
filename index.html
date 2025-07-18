@@ -1,47 +1,37 @@
 <!DOCTYPE html>
 <html lang="bg">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
   <title>Нова Сила</title>
-  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
     body {
       margin: 0;
-      font-family: Arial, sans-serif;
-      background-color: #eaf6f6;
-      color: #0b1c3d;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f5faff;
     }
 
-    /* HEADER */
     header {
+      background-color: #0b1c3d;
+      color: white;
       display: flex;
       justify-content: space-between;
       align-items: center;
-      background-color: #0b1c3d;
-      padding: 20px;
+      padding: 20px 40px;
       flex-wrap: wrap;
     }
 
     .logo {
       font-size: 24px;
       font-weight: bold;
-      color: white;
-    }
-
-    .logo span {
-      color: #24cdd5;
     }
 
     nav ul {
       list-style: none;
       display: flex;
-      margin: 0;
+      gap: 20px;
       padding: 0;
-    }
-
-    nav ul li {
-      margin-left: 20px;
+      margin: 0;
     }
 
     nav ul li a {
@@ -50,99 +40,140 @@
       font-weight: 500;
     }
 
-    nav ul li a.cta {
-      background-color: #24cdd5;
-      padding: 8px 14px;
-      border-radius: 5px;
-      font-weight: bold;
-      color: #0b1c3d;
-    }
-
-    nav ul li a.cta:hover {
-      background-color: #17b2af;
-    }
-
-    /* HERO SECTION */
     .hero {
+      background-image: url('https://github.com/niya230325/rehab-page/raw/main/IMG_2718.jpeg');
+      background-size: cover;
+      background-position: center;
+      color: white;
+      padding: 100px 20px;
       text-align: center;
-      padding: 60px 20px;
     }
 
     .hero h1 {
-      font-size: 32px;
-      color: #0b1c3d;
-      margin-bottom: 20px;
+      font-size: 42px;
+      margin-bottom: 10px;
     }
 
     .hero p {
-      font-size: 18px;
-      color: #333;
-      max-width: 600px;
-      margin: 0 auto 30px;
+      font-size: 20px;
+      margin-bottom: 20px;
     }
 
-    .btn {
+    .hero .btn {
       background-color: #24cdd5;
-      color: white;
-      padding: 12px 20px;
-      border-radius: 6px;
+      color: #0b1c3d;
+      padding: 12px 25px;
+      border-radius: 5px;
       text-decoration: none;
       font-weight: bold;
-      display: inline-block;
     }
 
-    .btn:hover {
-      background-color: #1bbdbb;
+    .features {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      padding: 50px 20px;
+      background-color: #ffffff;
     }
 
-    .hero img {
-      margin-top: 40px;
-      max-width: 90%;
-      height: auto;
-      border-radius: 12px;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    .feature {
+      flex: 1 1 200px;
+      margin: 20px;
+      text-align: center;
     }
 
-    /* FOOTER */
+    .feature h3 {
+      margin-top: 10px;
+      color: #0b1c3d;
+    }
+
+    .feature p {
+      color: #333;
+    }
+
+    .what-we-do {
+      background-color: #e7f9fd;
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    .what-we-do h2 {
+      font-size: 28px;
+      color: #0b1c3d;
+    }
+
     footer {
       background-color: #0b1c3d;
       color: white;
       text-align: center;
       padding: 20px;
-      margin-top: 40px;
+    }
+
+    @media (max-width: 768px) {
+      nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+      }
+
+      .features {
+        flex-direction: column;
+        align-items: center;
+      }
     }
   </style>
 </head>
-
 <body>
 
-  <!-- Header -->
   <header>
-    <div class="logo">Нова <span>Сила</span></div>
+    <div class="logo">Нова Сила</div>
     <nav>
       <ul>
-        <li><a href="#">Начало</a></li>
+        <li><a href="index.html">Начало</a></li>
         <li><a href="about.html">За нас</a></li>
         <li><a href="#">Услуги</a></li>
         <li><a href="#">Контакти</a></li>
-        <li><a href="#" class="cta">Запази час</a></li>
+        <li><a href="#" class="btn">Запази час</a></li>
       </ul>
     </nav>
   </header>
 
-  <!-- Hero Section -->
   <section class="hero">
-    <h1>Решение за твоята болка</h1>
-    <p>Ние предлагаме рехабилитация, кинезитерапия и индивидуален подход за възстановяване на тялото и духа.</p>
-    <a href="#" class="btn">Научи повече</a>
-    <div>
-      <img src="https://github.com/niya230325/rehab-page/raw/main/IMG_2718.jpeg" alt="Терапевт с пациент">
+    <h1>Подкрепа за твоето възстановяване</h1>
+    <p>Индивидуални рехабилитационни планове, съобразени с теб</p>
+    <a href="#" class="btn">Запази консултация</a>
+  </section>
+
+  <section class="features">
+    <div class="feature">
+      <img src="https://img.icons8.com/ios-filled/50/0b1c3d/medical-doctor.png"/>
+      <h3>Персонален подход</h3>
+      <p>Персонализирани планове според твоето състояние</p>
+    </div>
+    <div class="feature">
+      <img src="https://img.icons8.com/ios-filled/50/0b1c3d/back-pain.png"/>
+      <h3>Лечение на болка</h3>
+      <p>Специални терапии за опорно-двигателни проблеми</p>
+    </div>
+    <div class="feature">
+      <img src="https://img.icons8.com/ios-filled/50/0b1c3d/physical-therapy.png"/>
+      <h3>Кинезитерапия</h3>
+      <p>Движение за здраве с професионални упражнения</p>
+    </div>
+    <div class="feature">
+      <img src="https://img.icons8.com/ios-filled/50/0b1c3d/collaboration.png"/>
+      <h3>Екип от специалисти</h3>
+      <p>Работим заедно за твоето по-добро бъдеще</p>
     </div>
   </section>
 
-  <!-- Footer -->
+  <section class="what-we-do">
+    <h2>Какво правим</h2>
+    <p>Предлагаме професионална помощ за възстановяване и поддържане на здравето. Нашият екип от специалисти създава персонализирани решения за всяка нужда.</p>
+  </section>
+
   <footer>
-    © 2025 Нова Сила - Всички права запазени.
+    © 2025 Нова Сила – Всички права запазени.
   </footer>
 
 </body>
