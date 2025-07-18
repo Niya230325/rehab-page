@@ -8,48 +8,48 @@
     body {
       margin: 0;
       font-family: 'Segoe UI', sans-serif;
-      background-color: #f5faff;
+      background-color: #ffffff;
       padding: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
     }
 
     h1 {
       color: #0b1c3d;
       text-align: center;
+      font-size: 28px;
+      margin-bottom: 20px;
     }
 
-    .about-links {
-      display: flex;
-      flex-direction: column;
-      gap: 15px;
+    .content {
       max-width: 600px;
-      margin: 30px auto;
+      text-align: center;
+      color: #333333;
     }
 
-    .about-links a {
+    .content p {
+      font-size: 16px;
+      line-height: 1.6;
+      margin-bottom: 15px;
+    }
+
+    .content a {
+      color: #24cdd5;
       text-decoration: none;
-      color: #0b1c3d;
-      background-color: #e7f9fd;
-      padding: 15px;
-      border-radius: 6px;
-      border-left: 5px solid #24cdd5;
-      font-size: 18px;
-      transition: background-color 0.3s;
+      font-weight: bold;
     }
 
-    .about-links a:hover {
-      background-color: #d2f3f7;
+    .content a:hover {
+      text-decoration: underline;
     }
   </style>
 </head>
 <body>
   <h1>За нас</h1>
-  <div class="about-links">
-    <a href="mission.html">Нашата мисия и визия</a>
-    <a href="team.html">Екип</a>
-    <a href="approach.html">Нашият подход</a>
-    <a href="clients.html">Кои хора ни търсят</a>
-    <a href="results.html">Доверие и резултати</a>
-    <a href="location.html">Локация и оборудване</a>
+  <div class="content">
+    <p>При нас в <strong>VitalisRehabilitation</strong> медицинският център от най-ново поколение, в който предлагаме услуги на световно ниво, сред които възстановяване след операции, интервенции на опорно-двигателен апарат и още.</p>
+    <p>Научете повече за <a href="mission.html">нашата мисия и визия</a>, <a href="team.html">екпя</a>, <a href="approach.html">нашия подход</a>, <a href="clients.html">кои хора ни търсят</a>, <a href="results.html">доверие и резултати</a>, както и за <a href="location.html">локация и оборудване</a>.</p>
   </div>
 </body>
 </html>
